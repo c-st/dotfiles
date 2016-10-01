@@ -1,42 +1,39 @@
 "*":
   core:
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-    ]
-    followSymlinks: false
-    hideGitIgnoredFiles: true
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Menlo"
+    fontFamily: "PragmataPro"
     fontSize: 15
     invisibles: {}
-    showIndentGuide: true
-    softWrapAtPreferredLineLength: true
-  "go-plus":
-    goPath: "/Users/holman/Code/go"
-  "linter-eslint":
-    useGlobalEslint: true
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-      "text.html.basic"
-    ]
+    preferredLineLength: 120
+    showInvisibles: false
+  "elm-format": {}
+  "exception-reporting":
+    userId: "c69e9b22-2b40-402e-33aa-c0b4138e7008"
+  "js-hyperclick": {}
+  "language-elm":
+    elmOraclePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-oracle"
+  linter:
+    errorPanelHeight: 119
+    gutterEnabled: false
+    ignoreMatchedFiles: "/**/*Spec.js"
+    lintOnFly: false
+    showErrorInline: false
+  "linter-elm-make":
+    elmMakeExecutablePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-make"
+  minimap:
+    textOpacity: 0.4
+  tabs:
+    showIcons: false
   welcome:
     showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".elm.source":
+  editor:
+    autoIndentOnPaste: true
+    preferredLineLength: 120
+    showIndentGuide: true

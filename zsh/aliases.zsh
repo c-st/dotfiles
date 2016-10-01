@@ -1,5 +1,4 @@
 alias reload!='. ~/.zshrc'
-
 alias d=docker
 alias g=git
 alias n=npm

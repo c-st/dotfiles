@@ -8,6 +8,8 @@ autoload -U $ZSH/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
+ZSH_THEME="garyblessington"
+HIST_STAMPS="yyyy-mm-dd"
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
@@ -40,3 +42,7 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^[^N' newtab
 bindkey '^?' backward-delete-char
+
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

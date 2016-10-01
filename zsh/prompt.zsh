@@ -46,27 +46,6 @@ need_push () {
   fi
 }
 
-ruby_version() {
-  if (( $+commands[rbenv] ))
-  then
-    echo "$(rbenv version | awk '{print $1}')"
-  fi
-
-  if (( $+commands[rvm-prompt] ))
-  then
-    echo "$(rvm-prompt | awk '{print $1}')"
-  fi
-}
-
-rb_prompt() {
-  if ! [[ -z "$(ruby_version)" ]]
-  then
-    echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%} "
-  else
-    echo ""
-  fi
-}
-
 directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
@@ -79,4 +58,18 @@ set_prompt () {
 precmd() {
   title "zsh" "%m" "%55<...<%~"
   set_prompt
+}
+
+mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
+an() {
+  cd ~/Development/Astronote/astronote-web
+  nvm use >> /dev/null
+}
+
+files() {
+  sudo sysctl -w kern.maxfiles=20480
+  sudo sysctl -w kern.maxfilesperproc=18000
 }

@@ -1,1 +1,35 @@
-{}
+[
+  {
+    title: "Timer"
+    group: "planning-poker"
+    paths: [
+      "/Users/chris-stangier/Development/planning-poker/timer"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Planning poker"
+    group: "planning-poker"
+    paths: [
+      "/Users/chris-stangier/Development/planning-poker/planning-poker"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "dotfiles"
+    group: ""
+    paths: [
+      "/Users/chris-stangier/.dotfiles"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+]

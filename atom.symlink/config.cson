@@ -32,6 +32,7 @@
     elmMakeExecutablePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-make"
   minimap:
     textOpacity: 0.4
+  "project-manager": {}
   tabs:
     showIcons: false
   welcome:

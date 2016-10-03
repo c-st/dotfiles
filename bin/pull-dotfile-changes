@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+pushd ~/.dotfiles
+git pull origin master
+./script/bootstrap
+./script/install
+popd

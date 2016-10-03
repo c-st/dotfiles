@@ -1,4 +1,6 @@
 "*":
+  "autocomplete-haskell":
+    useBackend: "haskell-ghc-mod"
   core:
     themes: [
       "one-dark-ui"
@@ -9,10 +11,14 @@
     fontSize: 15
     invisibles: {}
     preferredLineLength: 120
-    showInvisibles: false
   "elm-format": {}
   "exception-reporting":
     userId: "c69e9b22-2b40-402e-33aa-c0b4138e7008"
+  "ide-haskell":
+    onSavePrettify: true
+  "ide-haskell-cabal":
+    cabal:
+      activeGhcVersion: "8.0"
   "js-hyperclick": {}
   "language-elm":
     elmOraclePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-oracle"

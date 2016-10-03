@@ -7,4 +7,11 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 
+haskell/cabal.symlink/bin
+haskell/cabal.symlink/lib
+haskell/cabal.symlink/libexec
+haskell/cabal.symlink/logs
+haskell/cabal.symlink/packages
+haskell/cabal.symlink/share
+
 git/gitconfig.local.symlink

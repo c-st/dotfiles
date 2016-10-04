@@ -32,4 +32,37 @@
     devMode: false
     template: null
   }
+  {
+    title: "astronote-web"
+    group: "astronote"
+    paths: [
+      "/Users/chris-stangier/Development/Astronote/astronote-web"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "astronote-sync"
+    group: "astronote"
+    paths: [
+      "/Users/chris-stangier/Development/Astronote/astronote-sync"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "mindmap"
+    group: "astronote"
+    paths: [
+      "/Users/chris-stangier/Development/Astronote/mindmap"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
 ]

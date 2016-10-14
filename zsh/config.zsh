@@ -73,6 +73,20 @@ cr() {
   export PATH="$CUSTREG/frontend/node_modules/.bin:$PATH"
 }
 
+so() {
+  export PROJECT_ROOT="/Users/Chris/Development/Metro/signon"
+  cd $PROJECT_ROOT
+  # nvm use >> /dev/null
+  export PATH="$PROJECT_ROOT/frontend/node_modules/react-scripts/node_modules/.bin:$PROJECT_ROOT/frontend/node_modules/.bin:$PATH"
+}
+
+ss() {
+  export PROJECT_ROOT="/Users/Chris/Development/Metro/self-service"
+  cd $PROJECT_ROOT
+  # nvm use >> /dev/null
+  export PATH="$PROJECT_ROOT/frontend/node_modules/react-scripts/node_modules/.bin:$PROJECT_ROOT/frontend/node_modules/.bin:$PATH"
+}
+
 cr_start() {
   sudo ifconfig lo0 alias 127.0.0.2
   sudo ifconfig lo0 alias 127.0.0.3

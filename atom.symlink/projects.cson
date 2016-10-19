@@ -25,7 +25,7 @@
     title: "dotfiles"
     group: ""
     paths: [
-      "/Users/chris-stangier/.dotfiles"
+      "~/.dotfiles"
     ]
     icon: "icon-chevron-right"
     settings: {}

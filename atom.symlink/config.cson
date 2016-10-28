@@ -13,6 +13,12 @@
     invisibles: {}
     preferredLineLength: 120
   "elm-format": {}
+  elmjutsu:
+    autocompleteEnabled: true
+    autocompleteSnippetsEnabled: true
+    cacheDirectory: "/var/folders/by/3r67nxd94rl9ynq051t7f9t40000gp/T/elmjutsu28745oJ0f8QYhXxzh"
+    hyperclickEnabled: true
+    showSidekick: true
   "exception-reporting":
     userId: "c69e9b22-2b40-402e-33aa-c0b4138e7008"
   "ide-haskell":

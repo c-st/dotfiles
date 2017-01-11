@@ -47,6 +47,9 @@ bindkey '^?' backward-delete-char
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# GCloud
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 mcd() {
   mkdir -p "$1" && cd "$1";

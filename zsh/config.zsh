@@ -67,7 +67,7 @@ files() {
 
 # Metro
 
-cr() {
+metro_cr() {
   export CUSTREG="/Users/Chris/Development/Metro/custreg"
   cd $CUSTREG/frontend
   nvm use >> /dev/null
@@ -76,21 +76,34 @@ cr() {
   export PATH="$CUSTREG/frontend/node_modules/.bin:$PATH"
 }
 
-so() {
+metro_so() {
   export PROJECT_ROOT="/Users/Chris/Development/Metro/signon"
   cd $PROJECT_ROOT
   # nvm use >> /dev/null
   export PATH="$PROJECT_ROOT/frontend/node_modules/react-scripts/node_modules/.bin:$PROJECT_ROOT/frontend/node_modules/.bin:$PATH"
 }
 
-ss() {
+metro_ss() {
   export PROJECT_ROOT="/Users/Chris/Development/Metro/self-service"
   cd $PROJECT_ROOT
   # nvm use >> /dev/null
   export PATH="$PROJECT_ROOT/frontend/node_modules/react-scripts/node_modules/.bin:$PROJECT_ROOT/frontend/node_modules/.bin:$PATH"
 }
 
-cr_start() {
+metro_dc() {
+  export PROJECT_ROOT="/Users/Chris/Development/Metro/card"
+  cd $PROJECT_ROOT
+  # nvm use >> /dev/null
+  export PATH="$PROJECT_ROOT/frontend/node_modules/react-scripts/node_modules/.bin:$PROJECT_ROOT/frontend/node_modules/.bin:$PATH"
+}
+
+metro_start_ccm() {
+  sudo ifconfig lo0 alias 127.0.0.2
+  sudo ifconfig lo0 alias 127.0.0.3
+  ccm start custreg
+}
+
+metro_start_all() {
   sudo ifconfig lo0 alias 127.0.0.2
   sudo ifconfig lo0 alias 127.0.0.3
   solr start -h 127.0.0.1 -e cloud -noprompt

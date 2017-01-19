@@ -3,6 +3,7 @@ atom-monokai@0.10.7
 atom-typescript@10.1.13
 autocomplete-haskell@0.7.1
 elm-format@2.1.0
+elmjutsu@3.0.4
 formatter@2.12.3
 git-time-machine@1.5.4
 goto@1.8.3

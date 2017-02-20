@@ -1,4 +1,10 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "a87ec54f-4581-4450-98a4-8d18e7c6a673"
+    js:
+      beautify_on_save: true
+      indent_size: 2
   "autocomplete-haskell":
     useBackend: "haskell-ghc-mod"
   core:
@@ -18,7 +24,7 @@
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/by/3r67nxd94rl9ynq051t7f9t40000gp/T/elmjutsu28745oJ0f8QYhXxzh"
     hyperclickEnabled: true
-    showSidekick: true
+    sidekickPosition: "right"
   "exception-reporting":
     userId: "c69e9b22-2b40-402e-33aa-c0b4138e7008"
   "ide-haskell":

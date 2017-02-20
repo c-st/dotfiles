@@ -5,10 +5,6 @@
     paths: [
       "/Users/chris-stangier/Development/planning-poker/timer"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
   }
   {
     title: "Planning poker"
@@ -16,21 +12,12 @@
     paths: [
       "/Users/chris-stangier/Development/planning-poker/planning-poker"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
   }
   {
     title: "dotfiles"
-    group: ""
     paths: [
       "~/.dotfiles"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
   }
   {
     title: "astronote-web"
@@ -38,10 +25,6 @@
     paths: [
       "/Users/chris-stangier/Development/Astronote/astronote-web"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
   }
   {
     title: "astronote-sync"
@@ -49,10 +32,6 @@
     paths: [
       "/Users/chris-stangier/Development/Astronote/astronote-sync"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
   }
   {
     title: "mindmap"
@@ -60,9 +39,12 @@
     paths: [
       "/Users/chris-stangier/Development/Astronote/mindmap"
     ]
-    icon: "icon-chevron-right"
-    settings: {}
-    devMode: false
-    template: null
+  }
+  {
+    title: "Manager"
+    group: "depict.io"
+    paths: [
+      "/Users/chris-stangier/Development/Photos/manager"
+    ]
   }
 ]

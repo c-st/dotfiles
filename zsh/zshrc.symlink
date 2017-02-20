@@ -40,6 +40,11 @@ done
 
 unset config_files
 
+# Autosuggest
 export TERM="xterm-256color"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/Chris/.sdkman"
+[[ -s "/Users/Chris/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Chris/.sdkman/bin/sdkman-init.sh"

@@ -8,7 +8,8 @@ autoload -U $ZSH/functions/*(:t)
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-ZSH_THEME="garyblessington"
+ZSH_THEME=""
+#"garyblessington"
 HIST_STAMPS="yyyy-mm-dd"
 
 setopt NO_BG_NICE # don't nice background tasks
@@ -48,8 +49,8 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 # GCloud
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+#source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+#source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 mcd() {
   mkdir -p "$1" && cd "$1";

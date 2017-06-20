@@ -28,10 +28,6 @@ do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit -u
-compinit -u
-
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
@@ -45,6 +41,5 @@ export TERM="xterm-256color"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=3'
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/Chris/.sdkman"
-[[ -s "/Users/Chris/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Chris/.sdkman/bin/sdkman-init.sh"
+autoload -U promptinit; promptinit
+prompt pure

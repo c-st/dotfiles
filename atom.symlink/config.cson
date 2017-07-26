@@ -3,7 +3,6 @@
     general:
       _analyticsUserId: "a87ec54f-4581-4450-98a4-8d18e7c6a673"
     js:
-      beautify_on_save: true
       indent_size: 2
   "autocomplete-haskell":
     useBackend: "haskell-ghc-mod"
@@ -35,16 +34,17 @@
   "js-hyperclick": {}
   "language-elm":
     elmOraclePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-oracle"
-  linter:
-    errorPanelHeight: 119
-    gutterEnabled: false
-    ignoreMatchedFiles: "/**/*Spec.js"
-    lintOnFly: false
-    showErrorInline: false
+  linter: {}
   "linter-elm-make":
     elmMakeExecutablePath: "/Users/chris-stangier/.nvm/versions/node/v5.9.0/bin/elm-make"
+  "linter-ui-default": {}
   minimap:
     textOpacity: 0.4
+  "prettier-atom":
+    formatOnSaveSilentError: true
+    jsxBracketSameLine: true
+    prettierOptions:
+      semi: false
   "project-manager": {}
   tabs:
     showIcons: false

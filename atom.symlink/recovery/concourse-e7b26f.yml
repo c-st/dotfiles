@@ -1,0 +1,64 @@
+- name: Setup Data container for Postgres
+  docker_container:
+    name: concourse-postgresql-data
+    image: busybox
+    state: present
+    volumes:
+      - /database
+
+- name: Postgres
+  docker_container:
+    name: concourse-postgresql
+    image: postgres:9.5
+    state: started
+    pull: true
+    recreate: true
+    restart_policy: always
+    volumes_from:
+      - concourse-postgresql-data
+    env:
+      POSTGRES_DB: concourse
+      POSTGRES_USER: concourse
+      POSTGRES_PASSWORD: zcDVqrfRx9eDkRnd6XfvKYBR
+      PGDATA: /database
+
+- file: path=/etc/concourse state=directory mode=0755
+
+- name: Copy concourse config
+  synchronize: src=config/concourse/ dest=/etc/concourse delete=yes recursive=yes
+
+- name: Concourse Web
+  docker_container:
+    name: concourse-web
+    image: concourse/concourse
+    command: web
+    state: started
+    pull: true
+    recreate: true
+    ports:
+      - "8080:8080"
+    links:
+      - "concourse-postgresql:concourse-db"
+    volumes:
+      - "/etc/concourse/web:/concourse-keys"
+    env:
+      CONCOURSE_BASIC_AUTH_USERNAME: concourse
+      CONCOURSE_BASIC_AUTH_PASSWORD: induct.manse.amends.curious.molehill.comma.emacs
+      CONCOURSE_EXTERNAL_URL: http://ci.stangier.io
+      CONCOURSE_POSTGRES_DATA_SOURCE: postgres://concourse:zcDVqrfRx9eDkRnd6XfvKYBR@concourse-db:5432/concourse?sslmode=disable
+      VIRTUAL_HOST: ci.stangier.io
+
+- name: Concourse Worker
+  docker_container:
+    name: concourse-worker
+    image: concourse/concourse
+    command: worker
+    privileged: true
+    pull: true
+    recreate: true
+    links:
+      - "concourse-web:concourse-web"
+    volumes:
+      - "/etc/concourse/worker:/concourse-keys"
+    env:
+      CONCOURSE_TSA_HOST: concourse-web

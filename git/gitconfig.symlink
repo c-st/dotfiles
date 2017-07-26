@@ -15,7 +15,7 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+	excludesfile = /Users/chris-stangier/.gitignore_global
         editor = vim
 [apply]
         whitespace = nowarn
@@ -42,3 +42,8 @@
 	email = mail@christian-stangier.com
 [commit]
 	template = /Users/chris-stangier/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

@@ -9,3 +9,4 @@ atom.symlink/themes
 
 git/gitconfig.local.symlink
 fishd.a45e60eab04f
+local.symlink/share/fish/fish_history
